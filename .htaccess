@@ -1,0 +1,14 @@
+php_value display_errors On
+php_value mbstring.http_input auto
+php_value date.timezone Europe/Moscow
+ErrorDocument 404 /img/error/404.html
+ErrorDocument 403 /img/error/403.html
+ErrorDocument 401 /img/error/401.html
+ErrorDocument 400 /img/error/400.html
+ErrorDocument 503 /img/error/503.html
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^network/user/(.*)$ network/user/index.php?username=$1 [L,QSA]
+RewriteRule ^network/signout$ network/vendor/signout.php [L,QSA]
+RewriteRule ^network/editprofile/(.*)$ network/editprofile.php?username=$1 [L,QSA]

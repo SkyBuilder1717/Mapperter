@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="yandex-verification" content="a1f442f03f759c76" />
+        <title>Glitch Union</title>
+        <script src="youtube.js"></script>
+        <style>
+            .header {
+                background-color: rgba(0, 0, 0, 0)fff;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            }
+            .header__logo {
+                font-size: 24px;
+                font-weight: bold;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+            .header__nav {
+                margin: auto;
+                justify-content: space-between;
+            }
+            .header__nav-button { 
+                background-color: #333;
+                color: #fff;
+                border: 16px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                display: inline-block;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .header__nav-button:hover {
+                background-image: linear-gradient(to bottom right, #28ebff80, #8400ff80);
+            }
+            body {
+                background-image: url('/img/backgrounds/default.png');
+                background-repeat: no-repeat;  
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+            .video-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #f7f7f7;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 30%;
+                margin: 40px auto;
+            }
+            .video-box h2 {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .video iframe  {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            h2 {
+                text-align: center;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .title {
+                color: #fff;
+                text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            }
+            footer p {
+                color: #fff;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="/favicon.png">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header__logo">Glitch Union</div>
+            <div class="header__nav">
+                <a class="header__nav-button" href="https://www.youtube.com/@Glitch_union">
+                    Канал <img src="/img/youtube.png" alt="YouTube канал" width="16" height="16"  style="vertical-align: middle;">
+                </a>
+                <button class="header__nav-button" onclick="window.location.href='/projects'">
+                    Проекты <img src="/img/projects.png" alt="Проекты" width="16" height="16" style="vertical-align: middle;">
+                </button>
+                <button class="header__nav-button" onclick="window.location.href='/network'">
+                    Mapperter <img src="/favicon.png" alt="Соцсеть" width="16" height="16" style="vertical-align: middle;">
+                </button>
+            </div>
+        </div>
+
+
+        <div class="video-box">
+            <h2>Последнее Видео!</h2>
+            <div class="video" id="video"></div>
+        </div>
+
+        <div class="header">
+            <footer>
+                <div class="thanks">
+                    <!--<p>Больше спасибо пользователю телеграмма @MaximalniyMax за домен</p>-->
+                    <p>Большое спасибо пользователю @ponamarev11 за исходный код сайта</p>
+                </div>
+                <p>-SkyBuilder- © 2024</p>
+            </footer>
+        </div>
+    </body>
+</html>
