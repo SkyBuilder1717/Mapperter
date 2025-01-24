@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyA7WUZbu_v7ralkZn7e9EujSsTYFtBPigA';
+const apiKey = ''; // Your Google API key
 const channelId = 'UCjeUmB52ZNTG4VEL_Ze4a8g';
 
 async function getLatestVideoId(channelId) {
