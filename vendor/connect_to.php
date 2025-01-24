@@ -1,6 +1,6 @@
 <?php
     // DataBase connection
-    $connect = mysqli_connect('sql211.yzz.me', 'yzzme_37068083', 'Glitch201101711', 'yzzme_37068083_IPs');
+    $connect = mysqli_connect('', '', '', '');
     
     // Error, if we got nothing
     if (!$connect) {
